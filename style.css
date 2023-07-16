@@ -85,11 +85,114 @@ main{
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 16px; /* 162.5% */
+line-height: 16px; 
 }
+.fact-title{ 
+    font-size: 1.5rem;
+    font-weight: 400px;
+} 
+.fact-description{ 
+    color: #727272;
 
+font-size: 13px;
+font-weight: 300;
+line-height: 10px; 
+}
+.card-container{ 
+    display: flex; 
+    justify-content:space-around; 
+    align-items: center; 
+   
+} 
+.card{ 
+    width: 12%;
+    border: 2px solid rgb(238, 147, 10); 
+    text-align: center; 
+    padding: 25px;
+} 
+.card-title{ 
+    font-size: 1.8rem; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+} 
+.card-description{ 
+    font-size: 13px;
+    font-weight: 300px; 
+   margin-bottom: 15px;
+} 
+.feature{ 
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+} 
+.card-title{ 
+ font-size: 20px;
+} 
+.card-description{ 
+  font-size: 12px;
+} 
+ .banner-title1{ 
+    border-left: 5px solid orange; 
+    font-size: 30px;
+    padding-left: 15px;
+}
+.feature-container, .cards { 
+    
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    
+}
+.feature-img { 
+  width:90%;
+             
+} 
+.feature-img img{ 
+    height: 90%;
+    width: 90%;
+    margin-left: 30px;
+} 
+.experience{ 
+    text-align: center; 
+    background-color: orange;
+    color: white; 
+    width: 200px;
+    padding: 17px 16px; 
+    position: relative; 
+    bottom: 80px; 
+    right: 30px;
+    border-radius: 10px;
+} 
+.ex-title{ 
+    font-size: 1.9rem;
+}
+.section{ 
+    text-align: center; 
+    margin-top: 100px;
+} 
+.section-img-container{ 
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 36px; 
 
-
+} 
+footer{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 248, 246); 
+    max-width: 90%; 
+    margin: 15px auto;
+    height: 30vh;
+      }
+ .footer-title{ 
+    color: gray;
+ } 
+ .sazin{ 
+    color: orangered;
+ }
 /* responsive style  */ 
 @media  screen and (max-width:576px) { 
     header{ 
@@ -99,12 +202,36 @@ line-height: 16px; /* 162.5% */
     .banner-content{ 
         width: 100%;
     }
-  nav , .team-container{ 
+  nav , .team-container, .card-container, .banner-content,.section-img-container{ 
     flex-direction: column;
   } 
+  .section-img-container img{ 
+    width: 50%;
+ 
+  } 
+  .feature{ 
+    flex-direction: column;
+  } 
+  .experience{ 
+    position: static; 
+    padding: 10px 15px;
+  }
+  .section-img-container{ 
+    gap: 35px; 
+    align-items: center;
+  }
+  .card{ 
+    width: 70%; 
+    margin: 10px 0px;
+  }
   .team-img{ 
     grid-template-columns: repeat(1, 1fr);
-  }
+  } 
+  footer{ 
+    padding: 0px 10px; 
+    height: 20vh;
+ 
+    
 } 
 
 @media screen and (min-width:576px) and (max-width:943px) { 
